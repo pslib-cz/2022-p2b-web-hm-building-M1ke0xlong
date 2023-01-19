@@ -1,0 +1,105 @@
+:root{
+    --black: #000000DE;
+    --darkgray: #3a3a3a;
+    --orange: #EB6C27;
+    --gray: #8888;
+    --white: #ffff;
+}
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    color:var(--darkgray);
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+p > mark{
+    color:var(--black);
+    background-color: var(--white);
+    font-weight: bold;
+}
+.title > h1{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    color: var(--white);
+}
+
+.title > h2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--white);
+}
+
+.popis > h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.popis > h1 > mark{
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+.galery > h1{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.baner > h1{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.galery2 > h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+}
+.galery2 > p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+
+footer > h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--white);
+}
+
+footer > p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--white);
+}
+
+/*hbnjkbhvghbjnkbhvgchvbjnbhgcfhgvb*/
+
+
+.header > img{
+    width: 127px;
+    height: 44px;
+}
+
+.title > img{
+    position: absolute;
+    width: 781px;
+    height: 269px;
+    left: -5px;
+    top: 0px;
+    z-index: -1;
+}
