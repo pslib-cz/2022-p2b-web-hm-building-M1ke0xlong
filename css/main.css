@@ -54,7 +54,7 @@ p > mark{
     line-height: 27px;
 }
 
-.baner > h1{
+.banner > h1{
     font-weight: 700;
     font-size: 17px;
     line-height: 21px;
@@ -86,9 +86,6 @@ footer > p{
     line-height: 18px;
     color: var(--white);
 }
-
-/*hbnjkbhvghbjnkbhvgchvbjnbhgcfhgvb*/
-
 
 .header > img{
     width: 127px;
