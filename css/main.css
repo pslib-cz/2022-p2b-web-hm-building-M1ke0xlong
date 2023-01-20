@@ -10,7 +10,12 @@
 html {
     font-family: 'Open Sans', sans-serif;
 }
-
+img {
+    max-width: 100%;
+}
+.title {
+    background-image: url(../media/pageheader-1920w.jpg);
+}
 p{
     color:var(--darkgray);
     font-size: 14px;
@@ -92,11 +97,37 @@ footer > p{
     height: 44px;
 }
 
-.title > img{
+.logo{
+    height: 5rem;
+}
+.navbar {
     position: absolute;
-    width: 781px;
-    height: 269px;
-    left: -5px;
-    top: 0px;
-    z-index: -1;
+    margin: 20px;
+    width: auto;
+    display: flex;
+    list-style-type: none;
+    height: 5rem;
+    background-color: #ffffff;
+    margin-left: auto;
+    overflow: hidden;
+    margin-right: auto;
+}
+.menu {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 5rem;
+
+}
+.menu > li a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+    padding: 5rem;
+}
+.active {
+    color: white;
+    background-color: #EB6C27;
 }
