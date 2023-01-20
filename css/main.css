@@ -33,6 +33,7 @@ p > mark{
     font-weight: bold;
 }
 .title > h1{
+    display: flex;
     font-weight: 800;
     font-size: 30px;
     line-height: 41px;
@@ -42,10 +43,13 @@ p > mark{
 }
 
 .title > h2 {
+    display: flex;
     font-weight: 300;
     font-size: 20px;
     line-height: 27px;
     color: var(--white);
+    justify-content: center;
+    align-items: center;
 }
 
 .popis > h1{
