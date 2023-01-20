@@ -13,12 +13,12 @@ html {
 }
 .title {
     background-image: url(../media/pageheader-1920w.jpg);
-    min-height: 380px;
+    min-height: 50rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
-  
     position: relative;
+    padding-top: 5rem;
 }
 p{
     color:var(--darkgray);
@@ -29,7 +29,7 @@ p{
 
 p > mark{
     color:var(--black);
-    background-color: var(--white);
+    background-color: rgba(0, 0, 0, 0);
     font-weight: bold;
 }
 .title > h1{
@@ -109,9 +109,10 @@ footer > p{
 
 .logo{
     height: 5rem;
+    margin-right: auto;
 }
 .navbar {
-    margin: 20px;
+    position: initial;
     width: fit-content;
     display: flex;
     list-style-type: none;
@@ -120,6 +121,8 @@ footer > p{
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    width: 90%;
+    margin-bottom: 0px;
 }
 .menu {
     display: flex;
@@ -138,12 +141,17 @@ footer > p{
     margin-left: 1rem;
     text-decoration: none;
     color: black;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 .active {
     color: white;
     background-color: #EB6C27;
+}
+.space {
+    margin-top: 20px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0);
 }
