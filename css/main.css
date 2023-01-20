@@ -9,12 +9,16 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-}
-img {
-    max-width: 100%;
+    margin: 0px;
 }
 .title {
     background-image: url(../media/pageheader-1920w.jpg);
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+    position: relative;
 }
 p{
     color:var(--darkgray);
@@ -33,6 +37,8 @@ p > mark{
     font-size: 30px;
     line-height: 41px;
     color: var(--white);
+    justify-content: center;
+    align-items: center;
 }
 
 .title > h2 {
@@ -101,19 +107,18 @@ footer > p{
     height: 5rem;
 }
 .navbar {
-    position: absolute;
     margin: 20px;
-    width: auto;
+    width: fit-content;
     display: flex;
     list-style-type: none;
     height: 5rem;
     background-color: #ffffff;
     margin-left: auto;
-    overflow: hidden;
     margin-right: auto;
+    overflow: hidden;
 }
 .menu {
-    display: inline-flex;
+    display: flex;
     list-style-type: none;
     justify-content: center;
     align-items: center;
@@ -121,11 +126,18 @@ footer > p{
     height: 5rem;
 
 }
+.menu > li {
+    display: inline-block;
+
+}
 .menu > li a {
     margin-left: 1rem;
     text-decoration: none;
     color: black;
-    padding: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .active {
     color: white;
