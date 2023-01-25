@@ -65,6 +65,12 @@ p > mark{
 .title > div {
     text-align: center;
 }
+.popis {
+    text-align: center;
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 .popis > h1{
     font-weight: 700;
     font-size: 22px;
@@ -162,4 +168,47 @@ footer > p{
 .active {
     color: white;
     background-color: #EB6C27;
+}
+.galerie__item {
+    display: inline-flex;
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.galerie__item_inverted {
+    display: inline-flex;
+    width: 70%;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.galerie__item > img, .galerie__item_inverted > img{
+    width: 50%;
+    border-radius: 0px 0px 50px 0px;
+}
+.galerie__item_inverted > img{
+    width: 50%;
+    border-radius: 50px 0px 0px 0px;
+}
+.galerie__item .galerie__item_text {
+    width: 100%;
+    text-align: left;
+    margin-left: 3rem;
+}
+.galerie__item_inverted .galerie__item_text {
+    margin-right: 3rem;
+    text-align: left;
+    width: 100%;
+}
+.galerie__item_text .btn__vice{
+    background-color: #EB6C27;
+    color: white;
+    padding: 0.7rem;
+    margin-top: 2rem;
+}
+.galerie {
+    text-align: center;
+}
+.galerie__item_div {
+    margin-top: 2rem;
 }
