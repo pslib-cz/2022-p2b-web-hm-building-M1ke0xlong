@@ -188,7 +188,7 @@ footer > p{
 }
 .galerie__item_inverted > img{
     width: 50%;
-    border-radius: 50px 0px 0px 0px;
+    border-radius: 0px 0px 0px 50px;
 }
 .galerie__item .galerie__item_text {
     width: 100%;
