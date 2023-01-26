@@ -102,20 +102,6 @@ p > mark{
 
 
 
-footer > h1{
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    color: var(--white);
-}
-
-footer > p{
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    color: var(--white);
-}
-
 .header > img{
     width: 127px;
     height: 44px;
@@ -282,3 +268,25 @@ footer > p{
 .ref-content__active p, h3 {
     color: white;
 }
+.btn3 {
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #EB6C27;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: #EB6C27;
+    padding: 5rem;
+    margin-top: 3rem;
+}
+footer p, footer h1, footer h2, footer h3, footer h4 {
+    background-color: #EB6C27;
+    color: white;
+} 
