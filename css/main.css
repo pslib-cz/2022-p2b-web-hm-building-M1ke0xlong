@@ -67,25 +67,20 @@ p > mark{
 }
 .popis {
     text-align: center;
-    width: 35rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 .popis > h1{
     font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 3rem;
+}
+.popis p {
+    width: 44rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .popis > h1 > mark{
     color: var(--orange);
     background-color: var(--white);
-}
-
-.galery > h1{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
 }
 
 .banner > h1{
@@ -94,12 +89,12 @@ p > mark{
     line-height: 21px;
 }
 
-.galery2 > h1{
+.gallery2 > h1{
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
 }
-.galery2 > p{
+.gallery2 > p{
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -211,4 +206,79 @@ footer > p{
 }
 .galerie__item_div {
     margin-top: 2rem;
+}
+.banner {
+    background-image: url(../media/background-CTAblock-4460w.jpg);
+    background-color: #787878;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-clip: border-box;
+    background-position-y: center;
+}
+
+.banner__content {
+    color: white;
+    font-weight: bold;
+    padding: 9rem;
+}
+.banner .btn2 {
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #EB6C27;
+    font-weight: 200;
+}
+.ref{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	
+}
+.ref .btn--primary-new{
+    padding: 12px 50px;
+}
+.ref__contents{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 2em;
+	margin-bottom: 80px;
+}
+.ref-content{
+    position: relative;
+    width: 30rem;
+    margin: 0;
+}
+.ref-content__img{
+    display: block;
+    width: 100%;
+}
+
+.ref-content__active {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    height: 298px;
+    width: 480px;
+    visibility: hidden;
+    
+    background-color: rgba(235, 108, 27, 0.8);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.ref-content:hover .ref-content__active {
+    visibility: visible;
+}
+.ref--text{
+    max-width: 50%;
+}
+.ref-content__active p, h3 {
+    color: white;
 }
