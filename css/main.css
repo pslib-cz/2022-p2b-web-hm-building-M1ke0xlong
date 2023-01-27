@@ -302,7 +302,7 @@ footer p, footer h1, footer h2, footer h3, footer h4 {
     color: white;
     text-align: center;
 } 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
     .main h1 {
         text-align: center;
     }
@@ -318,14 +318,14 @@ footer p, footer h1, footer h2, footer h3, footer h4 {
 .main li {
     color: #EB6C27;
 }  
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
     .main {
         margin-left: 1rem;
         margin-right: 1rem;
     }
 
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
     .navbar {
         display: none;
     }
