@@ -151,7 +151,7 @@ p > mark{
 .menu > li a {
     margin-left: 1rem;
     text-decoration: none;
-    color: black;
+    color: #262626;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 1.5rem;
@@ -160,6 +160,9 @@ p > mark{
 .active {
     color: white;
     background-color: #EB6C27;
+}
+li > a.active {
+    color:white;
 }
 .galerie__item {
     display: inline-flex;
@@ -197,6 +200,7 @@ p > mark{
     color: white;
     padding: 0.7rem;
     margin-top: 2rem;
+    text-decoration: none;
 }
 .galerie {
     text-align: center;
@@ -313,10 +317,14 @@ footer p, footer h1, footer h2, footer h3, footer h4 {
     .hamburger-menu {
         display: none;
     }
+    .ref__popis {
+        text-align: center;
+    }
 
 }
 .main li {
     color: #EB6C27;
+    font-size: 1.5rem;
 }  
 @media screen and (max-width: 768px){
     .main {
@@ -338,5 +346,23 @@ footer p, footer h1, footer h2, footer h3, footer h4 {
         width: 50%;
         height: 50%;
     }
+    .ref__popis, .ref-content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     
+}
+.btn4 {
+    display:flex;
+    color: #EB6C27;
+    text-align: center;
+    border: #EB6C27;
+    background-color: white;
+    padding: 1rem 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.novostavby__text {
+    max-width: 58rem;
 }
