@@ -22,6 +22,17 @@ html {
     position: relative;
     padding-top: 3rem;
 }
+.title__small {
+    background-image: url(../media/pageheader-1920w.jpg);
+    background-color: rgb(200, 200, 200);
+    background-blend-mode: multiply;
+    min-height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y:center;
+    padding-top: 3rem;
+}
 p{
     color:var(--darkgray);
     font-size: 14px;
@@ -73,7 +84,7 @@ p > mark{
     font-size: 3rem;
 }
 .popis p {
-    width: 44rem;
+    max-width: 44rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -289,4 +300,43 @@ footer {
 footer p, footer h1, footer h2, footer h3, footer h4 {
     background-color: #EB6C27;
     color: white;
+    text-align: center;
 } 
+@media screen and (min-width: 1024px){
+    .main h1 {
+        text-align: center;
+    }
+    .main {
+        margin-left: 10rem;
+        margin-right: 15rem;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+
+}
+.main li {
+    color: #EB6C27;
+}  
+@media screen and (max-width: 1024px){
+    .main {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+}
+@media screen and (max-width: 1024px){
+    .navbar {
+        display: none;
+    }
+    .title__small {
+        background-color: white;
+        background-image: none;
+        min-height: 5rem;
+    }
+    .title__small img {
+        width: 50%;
+        height: 50%;
+    }
+    
+}
