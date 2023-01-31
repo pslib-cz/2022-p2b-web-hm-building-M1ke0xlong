@@ -79,7 +79,7 @@ p > mark{
 .popis {
     text-align: center;
 }
-.popis > h1{
+.popis > h2{
     font-weight: 700;
     font-size: 3rem;
 }
@@ -89,18 +89,18 @@ p > mark{
     margin-right: auto;
 }
 
-.popis > h1 > mark{
+.popis > h2 > mark{
     color: var(--orange);
     background-color: var(--white);
 }
 
-.banner > h1{
+.banner > h2{
     font-weight: 700;
     font-size: 17px;
     line-height: 21px;
 }
 
-.gallery2 > h1{
+.gallery2 > h2{
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
@@ -303,13 +303,13 @@ footer {
     padding: 5rem;
     margin-top: 3rem;
 }
-footer p, footer h1, footer h2, footer h3, footer h4 {
+footer p, footer h2, footer h3, footer h4 {
     background-color: #EB6C27;
     color: white;
     text-align: center;
 } 
 @media screen and (min-width: 768px){
-    .main h1 {
+    .main h2 {
         text-align: center;
     }
     .main {
@@ -323,6 +323,9 @@ footer p, footer h1, footer h2, footer h3, footer h4 {
         text-align: center;
     }
     .title__small {
+        display: none;
+    }
+    .hamburger {
         display: none;
     }
 }
