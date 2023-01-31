@@ -230,6 +230,7 @@ li > a.active {
     padding-right: 4rem;
     background-color: #EB6C27;
     font-weight: 200;
+    color: white;
 }
 .ref{
     display: flex;
@@ -286,17 +287,12 @@ li > a.active {
     color: white;
 }
 .btn3 {
-    color: white;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    text-align: center;
+}
+.btn3__content{
+    padding: 1rem;
     background-color: #EB6C27;
-    text-decoration: none;
-    border: none;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    color: white;
 }
 footer {
     background-color: #EB6C27;
@@ -403,17 +399,18 @@ footer p, footer h2, footer h3, footer h4 {
     }
 }
 .btn4 {
-    display:flex;
-    color: #EB6C27;
     text-align: center;
-    border: #EB6C27;
-    background-color: white;
-    padding: 1rem 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
-.novostavby__text {
+.btn4__content{
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background-color: white;
+    color: var(--orange);
+    text-decoration: none;
+}
+.nostavby__text {
     max-width: 58rem;
 }
 .banner__content h2 {
@@ -427,4 +424,7 @@ footer p, footer h2, footer h3, footer h4 {
 }
 .banner__btn {
     margin-top: 2rem;
+}
+.body a {
+    text-decoration: none;
 }
