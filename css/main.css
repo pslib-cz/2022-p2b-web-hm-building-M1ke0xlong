@@ -428,3 +428,6 @@ footer p, footer h2, footer h3, footer h4 {
 .body a {
     text-decoration: none;
 }
+.galerie__item_text h2 {
+    font-size: 2rem;
+}
