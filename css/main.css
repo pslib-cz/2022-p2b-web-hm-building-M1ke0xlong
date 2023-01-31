@@ -31,7 +31,7 @@ html {
     background-repeat: no-repeat;
     background-size:cover;
     background-position-y:center;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 p{
     color:var(--darkgray);
@@ -222,6 +222,7 @@ li > a.active {
     color: white;
     font-weight: bold;
     padding: 9rem;
+    font-size: 0.8rem;
 }
 .banner .btn2 {
     padding: 1rem;
@@ -321,14 +322,16 @@ footer p, footer h1, footer h2, footer h3, footer h4 {
     .ref__popis {
         text-align: center;
     }
-
+    .title__small {
+        display: none;
+    }
 }
 .main li {
     color: #EB6C27;
     font-size: 1.5rem;
 }  
 @media screen and (max-width: 768px){
-    .main {
+    .main, .body {
         margin-left: 1rem;
         margin-right: 1rem;
     }
@@ -336,10 +339,11 @@ footer p, footer h1, footer h2, footer h3, footer h4 {
         display: none;
     }
     .title {
-        min-height: 20rem;
+        min-height: 15rem;
         display:grid;
         grid-template-rows: 1fr 3rem 2rem;
         grid-template-columns: 1fr;
+        background-size: 200%;
     }
     .title h1 {
         font-size: 170%;
@@ -387,9 +391,7 @@ footer p, footer h1, footer h2, footer h3, footer h4 {
     .banner__content {
         padding: 0px;
     }
-    .banner__content h1 {
-        font-size: 1rem;
-    }
+
 }
 .btn4 {
     display:flex;
@@ -404,4 +406,16 @@ footer p, footer h1, footer h2, footer h3, footer h4 {
 }
 .novostavby__text {
     max-width: 58rem;
+}
+.banner__content h2 {
+    font-size: 1.3rem;
+}
+.banner .btn2 {
+    padding: 0.8rem;
+    padding-left: 2.5rem;
+    font-size: 1rem;
+    padding-right: 2.5rem;
+}
+.banner__btn {
+    margin-top: 2rem;
 }
