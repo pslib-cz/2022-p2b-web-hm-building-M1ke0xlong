@@ -439,6 +439,10 @@ footer p, footer h2, footer h3, footer h4 {
 .body a {
     text-decoration: none;
 }
-.galerie__item_text h2 {
+h2 {
+    font-size: 2.5rem;
+}
+.galerie__item h3, .galerie__item_inverted h3 {
     font-size: 2rem;
+    color: #262626;
 }
