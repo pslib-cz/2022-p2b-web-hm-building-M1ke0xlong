@@ -397,6 +397,16 @@ footer p, footer h2, footer h3, footer h4 {
         height: 100%;
         width: 100%;
     }
+    .btn4 .btn4__content{
+        padding: 0.8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.8rem;
+        width: 80%;
+        background-color: white;
+        color: var(--orange);
+        text-decoration: none;
+    }
 }
 .btn4 {
     text-align: center;
@@ -406,6 +416,7 @@ footer p, footer h2, footer h3, footer h4 {
     padding: 1rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    font-size: 1rem;
     background-color: white;
     color: var(--orange);
     text-decoration: none;
