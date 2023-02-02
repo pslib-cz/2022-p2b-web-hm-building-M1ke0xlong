@@ -13,17 +13,17 @@
         <div class="title__small_index">
             <div class="navbar">
         <img src="./media/logo.png" alt="logo" class="logo">
-                <ul class="menu">
+                <menu class="menu hamburger-menu--hidden">
                     <li><a href="./index.html" class="active">DOMŮ</a></li>
                     <li><a href="./index.html#popis" >SLUŽBY</a></li>
                     <li><a href="./reference.html">REFERENCE</a></li>
                     <li><a href="./onas.html">O NÁS</a></li>
                     <li><a href="./kontakt.html">KONTAKTY</a></li>                
-                </ul>
+                </menu>
             </div>
             <div class="hamburger-menu">
-            <img src="./media/logo.png" alt="logo" class="logo">
-
+                <img class="logo" alt="HM-Building" src="./media/logo.png">
+                <a class="hamburger" href="javascript:void(0)">MENU</a>
             </div>
     </div>
         <div class="title">
@@ -44,6 +44,17 @@
         </div>
         
     </header>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger");
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu");
+                for (const menu of menus) {
+                    menu.classList.toggle("hamburger-menu--hidden");
+                }
+            }
+        }
+    </script>
     <div class="body">
 
         <div class="popis" id="popis">
@@ -121,12 +132,12 @@
 				</a>
             </div>
         </div>
-        <div class="btn3"><a class="btn3__content" href="#">Více informací</a></div>
+        <div class="btn3"><a class="btn3__content" href="./reference.html">Více informací</a></div>
     </div>
     <footer class="footer">
         <h2>Plácneme si pro Váš projekt?</h2>
         <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <div class="btn4"><a class="btn4__content" href="#">Nezávazně poptat</a></div>
+        <div class="btn4"><a class="btn4__content" href="./kontakt.html">Nezávazně poptat</a></div>
 
     </footer>
     

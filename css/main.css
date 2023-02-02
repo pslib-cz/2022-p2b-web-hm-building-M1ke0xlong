@@ -119,8 +119,10 @@ p > mark{
 }
 
 .logo{
-    height: 5rem;
+    display: flex;
+    height: 75%;
     margin-right: auto;
+    align-self: center;
 }
 .navbar {
     position: initial;
@@ -151,7 +153,7 @@ p > mark{
 .menu > li a {
     margin-left: 1rem;
     text-decoration: none;
-    color: #262626;
+    color: var(--darkgray);
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 1.5rem;
@@ -326,6 +328,9 @@ footer p, footer h2, footer h3, footer h4 {
     }
     .kontakt__text {
         text-align: center;
+        font-size: 1rem;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
     }
     .kontakt__content {
         display: inline-flex;
@@ -381,6 +386,10 @@ footer p, footer h2, footer h3, footer h4 {
     .kontakt__content_img {
         width: 50%;
         float: right;
+        background: linear-gradient(0deg, rgba(235, 108, 39, 0.6), rgba(235, 108, 39, 0.6));
+    }
+    .kontakt__content_img_white {
+        display: none;
     }
     .kontakt__content_orange {
         position:relative;
@@ -431,12 +440,60 @@ footer p, footer h2, footer h3, footer h4 {
         width: 25rem;
         height: 3rem;
     }
+    .kontakt__formular_nadpis p, .kontakt__formular_nadpis h3 {
+        margin-left: 10rem;
+    }
+    .kontakt__formular_nadpis p{
+        margin-left: 10rem;
+    }
 }
 .main li {
     color: #EB6C27;
     font-size: 1.5rem;
 }  
 @media screen and (max-width: 768px){
+    .hamburger-menu {
+        position: initial;
+        width: fit-content;
+        display: flex;
+        list-style-type: none;
+        height: 5rem;
+        background-color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        width: 90%;
+        
+    }
+    .hamburger {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    text-decoration: none;
+    color: var(--darkgray);
+    }
+
+    .hamburger::after {
+        content: url(../media/hamburger.svg);
+    }
+
+
+    @media screen and (max-width: 832px) {
+        .hamburger { 
+            display: flex;
+        } 
+        .hamburger-menu--hidden {
+            z-index: -1;
+        }
+    }
+    .logo{
+        display: flex;
+        height: 50%;
+        margin-right: auto;
+        align-self: center;
+    }
     .main{
         margin-left: 1rem;
         margin-right: 1rem;
@@ -567,16 +624,27 @@ footer p, footer h2, footer h3, footer h4 {
         content: url(../media/location_on_24px_outlined.svg);
     }
     .kontakt__content_img {
-        width: 90%;
+        display: none;
+    }
+    .kontakt__content_img_white {
+        width: 100%;
+        margin-top: 2rem;
     }
     .kontakt__content_orange {
         position:relative;
         background-color: #EB6C27;
         background-position-x: right;
     }
-    .kontakt__main h2 {
-        font-size: 3rem;
-        text-align: center;
+    .kontakt__main h2{
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 1rem;
+    }
+    .kontakt__text{
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .kontakt__formular {
         margin-left: 1rem;
@@ -607,7 +675,7 @@ footer p, footer h2, footer h3, footer h4 {
         text-align: left;
         border: 2px #EB6C27 solid;
     }
-    .kontakt__formular p, .kontakt__formular label {
+  .kontakt__formular label {
         font-weight: bold;
         font-size: 1rem;
         margin-bottom: 1rem;
@@ -618,6 +686,9 @@ footer p, footer h2, footer h3, footer h4 {
         border: 2px #EB6C27 solid;
         width: 17rem;
         height: 7rem;
+    }
+    .kontakt__formular_nadpis p, .kontakt__formular_nadpis h3 {
+        margin-left: 1rem;
     }
 }
 .btn4 {
@@ -660,4 +731,15 @@ h2 {
 }
 .icon_circle {
     text-align: left;
+}
+.kontakt__content {
+    margin-bottom: 6rem;
+}
+.kontakt__formular_nadpis p, .kontakt__formular_nadpis h3 {
+    color: black;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.kontakt__formular_nadpis h3 {
+    font-size: 1.5rem;
 }
