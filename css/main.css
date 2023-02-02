@@ -324,6 +324,113 @@ footer p, footer h2, footer h3, footer h4 {
     .hamburger {
         display: none;
     }
+    .kontakt__text {
+        text-align: center;
+    }
+    .kontakt__content {
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kontakt__content_udaje {
+        font-weight: bold;
+        height: 100%;
+        width: 50%;
+        padding: 0px;
+    }
+    .kontakt__content_udaje li {
+        margin-top: 2rem;
+        list-style: none;
+    }
+    .kontakt__content_udaje li a {
+        text-decoration: none;
+        color: #EB6C27;
+    
+    }
+    .kontakt__main {
+        text-align: center;
+    }
+    .icon_circle {
+        display: flex;
+        align-items: center;
+        margin-left: 10rem;
+        color: #EB6C27;
+        font-size: 1.5rem;
+    }
+    .icon_circle::before {
+        display: flex;
+        background-color: var(--orange);
+        padding: 1rem;
+        border-radius: 100%;
+        float: left;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 2rem;
+    }
+    .call::before {
+        content: url(../media/call_24px_outlined.svg);
+    }
+    .mail::before {
+        content: url(../media/email_24px_outlined.svg);
+    }
+    .location::before {
+        content: url(../media/location_on_24px_outlined.svg);
+    }
+    .kontakt__content_img {
+        width: 50%;
+        float: right;
+    }
+    .kontakt__content_orange {
+        position:relative;
+        background-color: #EB6C27;
+        background-position-x: right;
+    }
+    .kontakt__main h2 {
+        font-size: 3rem;
+    }
+    .kontakt__formular {
+        margin-left: 10rem;
+        text-align: left;
+    }
+    .kontakt__btn3 {
+        text-align: left;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    .kontakt__btn3 a {
+        text-decoration: none;
+    }
+    
+    .kontakt__formular_nabidkanadpis {
+        display: block;
+    }
+    .kontakt__formular input {
+        width: 25rem;
+        height: 3rem;
+        text-align: left;
+        border: 2px #EB6C27 solid;
+    }
+    .kontakt__formular_nabidka select{
+        padding-left: 0.2rem;
+        width: 25.5rem;
+        height: 3.375rem;
+        text-align: left;
+        border: 2px #EB6C27 solid;
+    }
+    .kontakt__formular p, .kontakt__formular label {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: var(--black);
+    }
+    .kontakt__formular textarea {
+        border: 2px #EB6C27 solid;
+        width: 25rem;
+        height: 3rem;
+    }
 }
 .main li {
     color: #EB6C27;
@@ -407,6 +514,111 @@ footer p, footer h2, footer h3, footer h4 {
         color: var(--orange);
         text-decoration: none;
     }
+    .kontakt__text {
+        text-align: center;
+    }
+    .kontakt__content {
+        width: 100%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kontakt__content_udaje {
+        font-weight: bold;
+        height: 100%;
+        padding: 0px;
+    }
+    .kontakt__content_udaje li {
+        margin-top: 2rem;
+        list-style: none;
+    }
+    .kontakt__content_udaje li a {
+        text-decoration: none;
+        color: #EB6C27;
+    
+    }
+    .kontakt__main {
+        text-align: center;
+    }
+    .icon_circle {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        color: #EB6C27;
+        font-size: 1.5rem;
+    }
+    .icon_circle::before {
+        display: flex;
+        background-color: var(--orange);
+        padding: 1rem;
+        border-radius: 100%;
+        float: left;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 1rem;
+    }
+    .call::before {
+        content: url(../media/call_24px_outlined.svg);
+    }
+    .mail::before {
+        content: url(../media/email_24px_outlined.svg);
+    }
+    .location::before {
+        content: url(../media/location_on_24px_outlined.svg);
+    }
+    .kontakt__content_img {
+        width: 90%;
+    }
+    .kontakt__content_orange {
+        position:relative;
+        background-color: #EB6C27;
+        background-position-x: right;
+    }
+    .kontakt__main h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .kontakt__formular {
+        margin-left: 1rem;
+        text-align: left;
+    }
+    .kontakt__btn3 {
+        text-align: left;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    .kontakt__btn3 a {
+        text-decoration: none;
+    }
+    
+    .kontakt__formular_nabidkanadpis {
+        display: block;
+    }
+    .kontakt__formular input {
+        width: 17rem;
+        height: 3rem;
+        text-align: left;
+        border: 2px #EB6C27 solid;
+    }
+    .kontakt__formular_nabidka select{
+        padding-left: 0.2rem;
+        width: 17.5rem;
+        height: 3.375rem;
+        text-align: left;
+        border: 2px #EB6C27 solid;
+    }
+    .kontakt__formular p, .kontakt__formular label {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: var(--black);
+    }
+    .kontakt__formular textarea {
+        border: 2px #EB6C27 solid;
+        width: 17rem;
+        height: 7rem;
+    }
 }
 .btn4 {
     text-align: center;
@@ -445,4 +657,7 @@ h2 {
 .galerie__item h3, .galerie__item_inverted h3 {
     font-size: 2rem;
     color: #262626;
+}
+.icon_circle {
+    text-align: left;
 }

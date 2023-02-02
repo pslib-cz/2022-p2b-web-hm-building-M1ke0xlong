@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>HM Building.cz s.r.o.</title>
+</head>
+<body>
+    <header>
+        <div class="title__small">
+                <div class="navbar">
+            <img src="./media/logo.png" alt="logo" class="logo">
+                    <ul class="menu">
+                        <li><a href="./index.html" >DOMŮ</a></li>
+                        <li><a href="./index.html#popis" >SLUŽBY</a></li>
+                        <li><a href="./reference.html">REFERENCE</a></li>
+                        <li><a href="./onas.html" >O NÁS</a></li>
+                        <li><a href="./kontakt.html" class="active">KONTAKTY</a></li>                
+                    </ul>
+                </div>
+                <div class="hamburger-menu">
+                <img src="./media/logo.png" alt="logo" class="logo">
+
+                </div>
+        </div>
+    </header>
+    <div class="kontakt__main">
+        <h2>Kontaktujte nás</h2>
+        <p class="kontakt__text">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
+        <div class="kontakt__content">
+            <ul class="kontakt__content_udaje">
+                <li class="call icon_circle">+420 775 550 564</li>
+                <li class="mail icon_circle">stavby@hm-building.cz</li>
+                <li class="location icon_circle"><a href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m6!3m5!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.7606998!4d15.0022441!16s%2Fg%2F11crt84wkg?hl=cs-CZ">Křižanská 12, Liberec XXII-Horní Suchá</a></li>
+            </ul>
+            <img class="kontakt__content_img" src="./media/mapa.jpg">
+        </div>
+        <div class="kontakt__formular">
+            <p>Jméno a příjmení</p>
+            <input type="text" class="kontakt__formular_jmeno">
+            <p>E-mail</p>
+            <input type="email" class="kontakt__formular_email">
+            <p>Telefon</p>
+            <input type="tel" class="kontakt__formular_email">
+            <form class="kontakt__formular_nabidka">
+                <label for="nabidky" class="kontakt__formular_nabidkanadpis">Poptávaná služba</label>
+                <select id="nabidky" name="nabidky">
+                  <option value="novostavby">Novostavba</option>
+                  <option value="prum">Průmyslová stavba</option>
+                  <option value="reko">Rekonstrukce</option>
+                  <option value="komu">Komunikace</option>
+                </select>
+              </form>
+            <p>Poznámka</p>
+            <textarea name="message"></textarea>
+            <div class="kontakt__btn3"><a class="btn3__content" href="#">Odeslat nezávaznou poptávku</a></div>
+
+        </div>
+    </div>
+</body>
+</html>
