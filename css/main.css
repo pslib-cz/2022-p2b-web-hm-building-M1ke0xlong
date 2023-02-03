@@ -166,11 +166,11 @@ li > a.active {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.galerie__item > img, .galerie__item_inverted > img{
+.galerie__item  img, .galerie__item_inverted  img{
     width: 50%;
     border-radius: 0px 0px 50px 0px;
 }
-.galerie__item_inverted > img{
+.galerie__item_inverted  img{
     width: 50%;
     border-radius: 0px 0px 0px 50px;
 }
@@ -439,6 +439,11 @@ footer p, footer h2, footer h3, footer h4 {
     .kontakt__formular_nadpis p{
         margin-left: 10rem;
     }
+    .galerie__item_img {
+        flex-basis: 50%;
+        width: 100%;
+        height: 100%;
+    }
 }
 .main li {
     color: #EB6C27;
@@ -538,6 +543,7 @@ footer p, footer h2, footer h3, footer h4 {
     }
     .galerie__item > img, .galerie__item_inverted > img {
         height: 100%;
+        width: 100%;
     }
     .banner {
         display: flex;
