@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 :root{
     --black: #000000DE;
     --darkgray: #3a3a3a;
@@ -5,11 +6,8 @@
     --gray: #8888;
     --white: #ffff;
 }
-
-
-html {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0px;
+* {
+    font-family: 'Open Sans';
 }
 .title {
     background-image: url(../media/pageheader-1920w.jpg);
@@ -94,23 +92,11 @@ p > mark{
     background-color: var(--white);
 }
 
-.banner > h2{
+.banner__content h2{
     font-weight: 700;
     font-size: 17px;
-    line-height: 21px;
+    color: white;
 }
-
-.gallery2 > h2{
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-}
-.gallery2 > p{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-}
-
 
 
 .header > img{
@@ -169,6 +155,7 @@ li > a.active {
 .galerie__item {
     display: inline-flex;
     width: 70%;
+    height: 70%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -200,10 +187,12 @@ li > a.active {
 .galerie__item_text .btn__vice{
     color: #EB6C27;
     background-color: white;
-    border: 2px #EB6C27 dashed;
     padding: 0.7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 2rem;
     text-decoration: none;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23EB6C27FF' stroke-width='3' stroke-dasharray='15%2c 10' stroke-dashoffset='31' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 .galerie {
     text-align: center;
@@ -211,6 +200,7 @@ li > a.active {
 .galerie__item_div {
     margin-top: 2rem;
 }
+
 .banner {
     background-image: url(../media/background-CTAblock-4460w.jpg);
     background-color: #787878;
@@ -265,7 +255,7 @@ li > a.active {
 
 .ref-content__active {
     position: absolute;
-
+    text-decoration: none;
     top: 0;
     left: 0;
     height: 100%;
@@ -285,7 +275,7 @@ li > a.active {
 .ref--text{
     max-width: 50%;
 }
-.ref-content__active p, h3 {
+.ref-content__active p, .ref-content__active h3 {
     color: white;
 }
 .btn3 {
@@ -319,6 +309,9 @@ footer p, footer h2, footer h3, footer h4 {
     }
     .ref__popis {
         text-align: center;
+        max-width: 45rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     .title__small_index {
         display: none;
@@ -544,7 +537,7 @@ footer p, footer h2, footer h3, footer h4 {
         margin: 0px;
     }
     .galerie__item > img, .galerie__item_inverted > img {
-        width: 100%;
+        height: 100%;
     }
     .banner {
         display: flex;
@@ -725,6 +718,10 @@ footer p, footer h2, footer h3, footer h4 {
 }
 h2 {
     font-size: 2.5rem;
+    color: var(--darkgray);
+}
+h3 {
+    color: var(--darkgray);
 }
 .galerie__item h3, .galerie__item_inverted h3 {
     font-size: 2rem;
