@@ -6,7 +6,7 @@
     --gray: #8888;
     --white: #ffff;
 }
-* {
+html {
     font-family: 'Open Sans';
 }
 .title {
@@ -43,26 +43,23 @@ p > mark{
     background-color: rgba(0, 0, 0, 0);
     font-weight: bold;
 }
-.title > h1{
-    display: flex;
+.title__hlavni_nadpis{
     font-weight: 800;
     font-size: 5rem;
     line-height: 41px;
     color: var(--white);
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.title > h2 {
-    display: flex;
+.title__hlavni_nadpis > span {
+    display:block;
+    margin-top: 3rem;
     font-weight:300;
     font-size: 3rem;
     line-height: 27px;
     color: var(--white);
-    justify-content: center;
-    align-items: center;
 }
-.title > div > a {
+.title__btn-popis {
     font-weight:300;
     font-size: 1.5em;
     padding: 1rem;
@@ -71,9 +68,10 @@ p > mark{
     background-color: #EB6C27;
     text-decoration: none;
 }
-.title > div {
+.title__btn {
     text-align: center;
 }
+
 .popis {
     text-align: center;
 }
@@ -112,7 +110,6 @@ p > mark{
 }
 .navbar {
     position: initial;
-    width: fit-content;
     display: flex;
     list-style-type: none;
     height: 5rem;
@@ -175,14 +172,12 @@ li > a.active {
     border-radius: 0px 0px 0px 50px;
 }
 .galerie__item .galerie__item_text {
-    width: 100%;
     text-align: left;
     margin-left: 3rem;
 }
 .galerie__item_inverted .galerie__item_text {
     margin-right: 3rem;
     text-align: left;
-    width: 100%;
 }
 .galerie__item_text .btn__vice{
     color: #EB6C27;
@@ -274,7 +269,6 @@ footer p, footer h2, footer h3, footer h4 {
     }
     .kontakt__content {
         display: inline-flex;
-        width: 100%;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
@@ -507,12 +501,12 @@ footer p, footer h2, footer h3, footer h4 {
         grid-template-columns: 1fr;
         background-size: 200%;
     }
-    .title h1 {
+    .title__hlavni_nadpis {
         font-size: 170%;
         align-items: flex-end;
         margin: 0px;
     }
-    .title h2 {
+    .title__hlavni_nadpis span {
         font-size: 120%;
         margin: 0px;
         font-weight: 200;
@@ -544,7 +538,6 @@ footer p, footer h2, footer h3, footer h4 {
     }
     .galerie__item > img, .galerie__item_inverted > img {
         height: 100%;
-        width: 100%;
     }
     .banner {
         display: flex;
