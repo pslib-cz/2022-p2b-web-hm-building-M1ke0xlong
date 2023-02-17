@@ -8,6 +8,7 @@
 }
 html {
     font-family: 'Open Sans';
+    font-size: 1rem;
 }
 .title {
     background-image: url(../media/pageheader-1920w.jpg);
@@ -89,19 +90,14 @@ p > mark{
 
 .banner__content h2{
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.5rem;
     color: white;
 }
 
 
-.header > img{
-    width: 127px;
-    height: 44px;
-}
-
-.logo{
+.logo__odkaz {
     display: flex;
-    height: 75%;
+    height: 60%;
     margin-right: auto;
     align-self: center;
 }
@@ -751,7 +747,7 @@ footer p, footer h2, footer h3, footer h4 {
     max-width: 58rem;
 }
 .banner__content h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .banner .btn2 {
     padding: 0.8rem;
