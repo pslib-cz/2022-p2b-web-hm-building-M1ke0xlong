@@ -33,8 +33,7 @@ html {
 }
 p{
     color:var(--darkgray);
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -55,7 +54,6 @@ p > mark{
     margin-top: 3rem;
     font-weight:300;
     font-size: 3rem;
-    line-height: 27px;
     color: var(--white);
 }
 .title__btn-popis {
@@ -135,6 +133,7 @@ p > mark{
 .menu > li a {
     margin-left: 1rem;
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--darkgray);
     padding-top: 3rem;
     padding-bottom: 3rem;
