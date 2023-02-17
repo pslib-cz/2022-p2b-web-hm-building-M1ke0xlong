@@ -11,7 +11,7 @@ html {
 }
 .title {
     background-image: url(../media/pageheader-1920w.jpg);
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(150, 150, 150);
     background-blend-mode: multiply;
     min-height: 43rem;
     background-position: center;
@@ -22,7 +22,7 @@ html {
 }
 .title__small {
     background-image: url(../media/pageheader-1920w.jpg);
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(150, 150, 150);
     background-blend-mode: multiply;
     min-height: 8rem;
     background-position: center;
@@ -46,7 +46,6 @@ p > mark{
 .title__hlavni_nadpis{
     font-weight: 800;
     font-size: 5rem;
-    line-height: 41px;
     color: var(--white);
     text-align: center;
 }
@@ -497,17 +496,16 @@ footer p, footer h2, footer h3, footer h4 {
     .title {
         min-height: 15rem;
         display:grid;
-        grid-template-rows: 1fr 3rem 2rem;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         background-size: 200%;
     }
     .title__hlavni_nadpis {
-        font-size: 170%;
-        align-items: flex-end;
-        margin: 0px;
+        font-size:2rem;
+        margin-top: auto;
     }
     .title__hlavni_nadpis span {
-        font-size: 120%;
+        font-size: 1.2rem;
         margin: 0px;
         font-weight: 200;
     }
@@ -551,9 +549,10 @@ footer p, footer h2, footer h3, footer h4 {
     .ref-content{
         width: 80%;
     }
-    .ref-content__active {
-        height: 100%;
-        width: 100%;
+    .ref-content__active h3 {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .btn4 .btn4__content{
         padding: 0.8rem;
@@ -703,7 +702,9 @@ footer p, footer h2, footer h3, footer h4 {
     }
     .ref-content__img{
         display: block;
-        width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .ref-content__active {
@@ -724,6 +725,14 @@ footer p, footer h2, footer h3, footer h4 {
     .ref-content__active h3 {
         font-size: 2rem;
         margin-bottom: 0.5rem;
+    }
+    .galerie__item  img, .galerie__item_inverted  img{
+        width: 100%;
+        border-radius: 0px 0px 50px 0px;
+    }
+    .galerie__item_inverted  img{
+        width: 100%;
+        border-radius: 0px 0px 0px 50px;
     }
 }
 .btn4 {
