@@ -11,22 +11,30 @@
 <body>
     <header>
         <div class="title__small">
-                <div class="navbar">
-                    <a href="./index.html" class="logo__odkaz"><img src="./media/logo.png" alt="logo" ></a>
-                    <ul class="menu">
-                        <li><a href="./index.html" >DOMŮ</a></li>
-                        <li><a href="./index.html#popis" >SLUŽBY</a></li>
-                        <li><a href="./reference.html">REFERENCE</a></li>
-                        <li><a href="./onas.html" >O NÁS</a></li>
-                        <li><a href="./kontakt.html" class="active">KONTAKTY</a></li>                
-                    </ul>
-                </div>
-                <div class="hamburger-menu">
-                <img src="./media/logo.png" alt="logo" class="logo">
-
-                </div>
+            <nav class="navbar">
+                <a href="./index.html" class="logo__odkaz"><img src="./media/logo.png" alt="logo"></a>
+                <menu class="menu hamburger-menu hamburger-menu--hidden">
+                    <a href="./index.html"><li>domů</li></a>
+                    <a href="./index.html#popis"><li>služby</li></a>
+                    <a href="./reference.html"><li>reference</li></a>
+                    <a href="./onas.html"><li>o nás</li></a>
+                    <a href="./kontakt.html" class="active"><li>kontakty</li></a>                   
+                </menu>
+                <a class="hamburger" href="javascript:void(0)">menu</a>
+            </nav>
         </div>
     </header>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger");
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu");
+                for (const menu of menus) {
+                    menu.classList.toggle("hamburger-menu--hidden");
+                }
+            }
+        }
+    </script>
     <div class="kontakt__main">
         <h2>Kontaktujte nás</h2>
         <p class="kontakt__text">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>

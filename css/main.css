@@ -32,6 +32,9 @@ html {
     background-position-y:center;
     padding-top: 2rem;
 }
+.ref__popis h2 {
+    text-align: center;
+}
 p{
     color:var(--darkgray);
     font-size: 1rem;
@@ -97,7 +100,8 @@ p > mark{
 
 .logo__odkaz {
     display: flex;
-    height: 60%;
+    align-items: center;
+    margin-left: 1rem;
     margin-right: auto;
     align-self: center;
 }
@@ -113,34 +117,12 @@ p > mark{
     width: 90%;
     margin-bottom: 18rem;
 }
-.menu {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    height: 5rem;
 
-}
-.menu > li {
-    display: inline-block;
 
-}
-.menu > li a {
-    margin-left: 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--darkgray);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
 .active {
-    color: white;
     background-color: #EB6C27;
 }
-li > a.active {
+.active li {
     color:white;
 }
 .galerie__item {
@@ -233,11 +215,34 @@ footer p, footer h2, footer h3, footer h4 {
     text-align: center;
 } 
 @media screen and (min-width: 1055px){
+    .menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        height: 5rem;
+    
+    }
+    .menu a{
+        border-left: 1px white solid;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--darkgray);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        min-width: 5.5rem;
+    }
     .main h2 {
         text-align: center;
     }
-    .menu li {
-        display: flex;
+    .menu li a {
+        display: inline;
+        min-width: 10rem;
+        width: 100%;
     }
     .main {
         margin-left: 10rem;
@@ -252,12 +257,11 @@ footer p, footer h2, footer h3, footer h4 {
         margin-left: auto;
         margin-right: auto;
     }
+    
     .title__small_index {
         display: none;
     }
-    .hamburger {
-        display: none;
-    }
+    
     .kontakt__text {
         text-align: center;
         font-size: 1rem;
@@ -442,19 +446,37 @@ footer p, footer h2, footer h3, footer h4 {
     color: #EB6C27;
     font-size: 1.5rem;
 }  
-@media screen and (max-width: 1055px){
-    .hamburger-menu {
-        position: initial;
-        width: fit-content;
+@media screen and (max-width: 1054px){
+    .menu a {
         display: flex;
-        list-style-type: none;
-        height: 5rem;
-        background-color: #ffffff;
-        margin-left: auto;
-        margin-right: auto;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--darkgray);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        width: 100%;
+        border-bottom: 1px black solid;
+        background-color: white;
         overflow: hidden;
-        width: 90%;
-        
+        justify-content: center;
+        align-items: center;
+    }
+    .menu a.active {
+        background-color: var(--orange);
+    }
+    .active li {
+        color: white;
+    }
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 5rem;
+        background-color: white;
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px;
+        z-index: 1;
     }
     .hamburger {
     display: flex;
@@ -465,25 +487,23 @@ footer p, footer h2, footer h3, footer h4 {
     text-decoration: none;
     color: var(--darkgray);
     }
-
+    .title__small .navbar {
+        margin-bottom: 2rem;
+    }
     .hamburger::after {
         content: url(../media/hamburger.svg);
     }
-
-
-    @media screen and (max-width: 1055px) {
-        .hamburger { 
-            display: flex;
-            margin-right: 1rem;
-        } 
-        .hamburger-menu--hidden {
-            z-index: -1;
-        }
-        .menu.hamburger-menu li {
-            display: flex;
-            flex-direction: column;
-        };
-
+    .hamburger { 
+        display: flex;
+        margin-right: 1rem;
+    } 
+    .hamburger-menu--hidden {
+        visibility: hidden;
+    }
+    .menu.hamburger-menu li {
+        display: flex;
+        flex-direction: column;
+    }
     .logo{
         display: flex;
         height: 50%;
@@ -744,7 +764,6 @@ footer p, footer h2, footer h3, footer h4 {
     }
 }
 
-}
 .btn4 {
     text-align: center;
     margin-top: 2.5rem;

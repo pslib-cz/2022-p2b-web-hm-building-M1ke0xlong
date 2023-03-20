@@ -11,23 +11,30 @@
 <body>
     <header>
         <div class="title__small">
-                <div class="navbar">
-                    <a href="./index.html" class="logo__odkaz"><img src="./media/logo.png" alt="logo" ></a>
-
-                    <ul class="menu">
-                        <li><a href="./index.html" >DOMŮ</a></li>
-                        <li><a href="./index.html#popis" class="active">SLUŽBY</a></li>
-                        <li><a href="./reference.html">REFERENCE</a></li>
-                        <li><a href="./onas.html" >O NÁS</a></li>
-                        <li><a href="./kontakt.html">KONTAKTY</a></li>                
-                    </ul>
-                </div>
-                <div class="hamburger-menu">
-                <img src="./media/logo.png" alt="logo" class="logo">
-
-                </div>
+            <nav class="navbar">
+                <a href="./index.html" class="logo__odkaz"><img src="./media/logo.png" alt="logo"></a>
+                <menu class="menu hamburger-menu hamburger-menu--hidden">
+                    <a href="./index.html"><li>domů</li></a>
+                    <a href="./index.html#popis" class="active"><li>služby</li></a>
+                    <a href="./reference.html"><li>reference</li></a>
+                    <a href="./onas.html"><li>o nás</li></a>
+                    <a href="./kontakt.html"><li>kontakty</li></a>                
+                </menu>
+                <a class="hamburger" href="javascript:void(0)">menu</a>
+            </nav>
         </div>
     </header>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger");
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu");
+                for (const menu of menus) {
+                    menu.classList.toggle("hamburger-menu--hidden");
+                }
+            }
+        }
+    </script>
     <div class="main">
         <h2>Rekonstrukce domů</h2>
         <p>Provádíme veškeré práce spojené s rekonstrukcí stávajících objektů.</p>

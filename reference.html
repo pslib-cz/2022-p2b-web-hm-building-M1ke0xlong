@@ -11,22 +11,30 @@
 <body>
     <header>
         <div class="title__small">
-                <div class="navbar">
-                    <a href="./index.html" class="logo__odkaz"><img src="./media/logo.png" alt="logo" ></a>
-                    <ul class="menu">
-                        <li><a href="./index.html" >DOMŮ</a></li>
-                        <li><a href="./index.html#popis">SLUŽBY</a></li>
-                        <li><a href="./reference.html" class="active">REFERENCE</a></li>
-                        <li><a href="./onas.html" >O NÁS</a></li>
-                        <li><a href="./kontakt.html">KONTAKTY</a></li>                
-                    </ul>
-                </div>
-                <div class="hamburger-menu">
-                <img src="./media/logo.png" alt="logo" class="logo">
-
-                </div>
+            <nav class="navbar">
+                <a href="./index.html" class="logo__odkaz"><img src="./media/logo.png" alt="logo"></a>
+                <menu class="menu hamburger-menu hamburger-menu--hidden">
+                    <a href="./index.html"><li>domů</li></a>
+                    <a href="./index.html#popis"><li>služby</li></a>
+                    <a href="./reference.html" class="active"><li>reference</li></a>
+                    <a href="./onas.html"><li>o nás</li></a>
+                    <a href="./kontakt.html"><li>kontakty</li></a>                
+                </menu>
+                <a class="hamburger" href="javascript:void(0)">menu</a>
+            </nav>
         </div>
     </header>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger");
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu");
+                for (const menu of menus) {
+                    menu.classList.toggle("hamburger-menu--hidden");
+                }
+            }
+        }
+    </script>
     <div class="ref__popis">
         <h2>Reference</h2>
             <p>Stojí za námi <mark>kvalitně vyhotovené zakázky</mark> dle konkrétních požadavků zadavatelů <mark>podepřené letitými zkušenostmi ve stavebnictví</mark>. To, že <mark>obrátit se na právě nás je vhodná volba potvrdí naši klienti</mark>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
@@ -34,21 +42,21 @@
     <div class="ref__contents">
         <div class="ref-content">
             <img class="ref-content__img" alt="Fotka námi předělané hasičské stanice" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg">
-            <a class="ref-content__active" href="#">
+            <a class="ref-content__active" href="./rekonstrukce.html">
                 <h3>Hasičská zbrojnice</h3>
                 <p>celková rekonstrukce</p>
             </a>
         </div>
         <div class="ref-content">
-            <img class="ref-content__img" alt="Fotka námi předělané hasičské stanice" src="./media/reference/reference-pradelna-600w.jpg">
-            <a class="ref-content__active" href="#">
+            <img class="ref-content__img" alt="Samoobslužná prádelna" src="./media/reference/reference-pradelna-600w.jpg">
+            <a class="ref-content__active" href="./rekonstrukce.html">
                 <h3>Samoobslužná prádelna</h3>
                 <p>stavební úpravy a opravy</p>
             </a>
         </div>
         <div class="ref-content">
-            <img class="ref-content__img" alt="Fotka námi předělané hasičské stanice" src="./media/reference/reference-plocha-600w.jpg">
-            <a class="ref-content__active" href="#">
+            <img class="ref-content__img" alt="Venkovní plocha Restyl" src="./media/reference/reference-plocha-600w.jpg">
+            <a class="ref-content__active" href="./komunikace.html">
                 <h3>Venkovní plochy Restyl</h3>
                 <p>provedení venkovních ploch</p>
             </a>
@@ -58,10 +66,6 @@
         <h2>Plácneme si pro Váš projekt?</h2>
         <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
         <div class="btn4"><a class="btn4__content" href="./kontakt.html">Nezávazně poptat</a></div>
- 
-
     </footer>
-    
-    
 </body>
 </html>
